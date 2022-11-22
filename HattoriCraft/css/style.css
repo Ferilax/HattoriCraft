@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html, body {
+  font-size: 62.5%;
+}
+
+@media (max-width: 108em) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 105em) {
+  html {
+    font-size: 8.75px;
+  }
+}
+@media (max-width: 91.5em) {
+  html {
+    font-size: 7.9px;
+  }
+}
+@media (max-width: 91em) {
+  html {
+    font-size: 8.4px;
+  }
+}
+@media (max-width: 90em) {
+  html {
+    font-size: 7.9px;
+  }
+}
+@media (max-width: 80em) {
+  html {
+    font-size: 7.2px;
+  }
+}
+@media (max-width: 72em) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media (max-width: 64em) {
+  html {
+    font-size: 5.5px;
+  }
+}
+@media (max-width: 48em) {
+  html {
+    font-size: 10px;
+    -webkit-text-size-adjust: none;
+  }
+}
+@media (max-width: 44em) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 38em) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 26em) {
+  html {
+    font-size: 4.5px;
+  }
+}
+@media (max-width: 21em) {
+  html {
+    font-size: 4.4px;
+  }
+}
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
