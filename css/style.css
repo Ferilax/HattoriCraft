@@ -176,6 +176,9 @@ html, body {
   font-family: Montserrat;
   position: relative;
   min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .wrapper img {
   width: 100%;
@@ -190,7 +193,7 @@ html, body {
   transform: translateX(-50%);
   width: 178.9rem;
   height: 38.3rem;
-  z-index: -3;
+  z-index: -4;
 }
 .wrapper__logo2 {
   position: absolute;
@@ -199,7 +202,7 @@ html, body {
   transform: translateX(-50%);
   width: 173.2rem;
   height: 49.8rem;
-  z-index: -3;
+  z-index: -4;
 }
 .wrapper__bg1 {
   padding-top: 22rem;
@@ -208,20 +211,33 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -4;
+  z-index: -5;
 }
 .wrapper__bg1 img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.wrapper__bg2 {
+  padding-top: 88.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+.wrapper__bg2 img {
   -o-object-fit: fill;
      object-fit: fill;
 }
 .wrapper .pasan {
   position: absolute;
   top: -15rem;
-  left: 28rem;
+  left: 22rem;
   width: 113rem;
   height: 91rem;
-  z-index: -1;
-  transform: scale(0.8);
+  z-index: -2;
+  transform: scale(1.4);
 }
 .wrapper .pasan img {
   width: 100%;
@@ -231,9 +247,9 @@ html, body {
 }
 .wrapper .heart {
   position: absolute;
-  top: 11rem;
-  left: 48rem;
-  z-index: -2;
+  top: 2rem;
+  left: 45rem;
+  z-index: -3;
   transform: scale(0.8);
   width: 20.2rem;
   height: 22.2rem;
@@ -252,6 +268,145 @@ html, body {
 .wrapper .heart img {
   width: 5.3rem;
   height: 5.3rem;
+}
+.wrapper__v1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60rem;
+  height: 38.5rem;
+  z-index: -1;
+}
+.wrapper__v2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 59.6rem;
+  height: 24.4rem;
+  z-index: -1;
+}
+.wrapper__v3 {
+  position: absolute;
+  top: 48.2rem;
+  left: 0;
+  width: 81.8rem;
+  height: 68.5rem;
+  z-index: -1;
+}
+.wrapper__v4 {
+  position: absolute;
+  top: 48.4rem;
+  right: 0;
+  width: 54.7rem;
+  height: 51rem;
+  z-index: -1;
+}
+.wrapper__v5 {
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 56.5rem;
+  height: 68rem;
+  z-index: 1;
+}
+.wrapper__v6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 39.8rem;
+  height: 83.2rem;
+  z-index: 1;
+}
+.wrapper__ten {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 127.1rem;
+  opacity: 0.52;
+  z-index: 3;
+}
+@media (max-width: 1919px) {
+  .wrapper__ten {
+    display: none;
+  }
+}
+.wrapper__o1 {
+  position: absolute;
+  top: 76.7rem;
+  left: 0;
+  width: 104.7rem;
+  height: 80.5rem;
+}
+.wrapper__o2 {
+  position: absolute;
+  top: 76.7rem;
+  left: 13.4rem;
+  width: 166.3rem;
+  height: 80.5rem;
+}
+.wrapper__o3 {
+  position: absolute;
+  top: 73rem;
+  right: 0;
+  width: 111.8rem;
+  height: 81rem;
+}
+.wrapper__ro1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 110rem;
+  z-index: -1;
+}
+.wrapper__ro2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 64rem;
+  z-index: -1;
+}
+.wrapper__ro3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 76.5rem;
+  height: 19.4rem;
+  z-index: -1;
+}
+.wrapper__ro4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 54.4rem;
+  height: 40rem;
+  z-index: -1;
+}
+.wrapper__clipboard {
+  font-size: 2rem;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 28rem;
+  display: none;
+  border-radius: 2rem;
+  border: 4px solid rgba(86, 52, 49, 0.6980392157);
+  background-color: rgba(223, 172, 165, 0.7137254902);
+  font-family: "Golos Text";
+  letter-spacing: 0.2rem;
+  width: 100%;
+  padding: 1rem;
+  color: #523431;
+  pointer-events: none;
+}
+.wrapper__clipboard.active {
+  display: block;
+}
+
+.ignore {
+  pointer-events: none;
 }
 
 .container {
@@ -293,6 +448,9 @@ html, body {
   color: #8a5f59;
 }
 
+.start {
+  margin-bottom: 52rem;
+}
 .start .container {
   max-width: 104rem;
 }
@@ -343,4 +501,69 @@ html, body {
 .start__button:active {
   transform: translateY(0.5rem);
   box-shadow: 0 0rem 0px #a77974;
+}
+
+.shop {
+  position: relative;
+  z-index: 2;
+}
+.shop__title {
+  font-family: "Golos Text";
+  font-size: 6rem;
+  font-weight: 600;
+  color: #563431;
+  text-align: center;
+  margin-bottom: 9rem;
+}
+.shop__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shop__columm {
+  flex: 0 1 25%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.shop__item {
+  flex: 0 1 28rem;
+  transition: 0.3s;
+  background: #6a4b48;
+}
+.shop__item:hover {
+  transform: scale(1.05);
+}
+.shop__img {
+  height: 15rem;
+}
+.shop__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  background: white;
+  transform: scaleY(1.01);
+}
+.shop__name {
+  font-family: "Golos Text";
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #563430;
+  margin-bottom: 0.5rem;
+}
+.shop__time {
+  font-family: "Golos Text";
+  font-size: 1.56rem;
+  font-weight: 600;
+  color: #c5c5c5;
+}
+.shop__price {
+  font-family: "Golos Text";
+  font-size: 2.44rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #563430;
 }/*# sourceMappingURL=style.css.map */

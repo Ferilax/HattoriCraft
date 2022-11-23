@@ -44,6 +44,7 @@
 	}
 }
 
+
 //ПЕРЕМЕННЫЕ
 
 body {
@@ -55,6 +56,9 @@ body {
 	position: relative;
 	@include img(contain);
 	min-height: 100vh;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
 
 	&__logo1 {
 		position: absolute;
@@ -63,7 +67,7 @@ body {
 		transform: translateX(-50%);
 		width: 178.9rem;
 		height: 38.3rem;
-		z-index: -3;
+		z-index: -4;
 	}
 	&__logo2 {
 		position: absolute;
@@ -72,7 +76,7 @@ body {
 		transform: translateX(-50%);
 		width: 173.2rem;
 		height: 49.8rem;
-		z-index: -3;
+		z-index: -4;
 	}
 	&__bg1 {
 		padding-top: 22rem;
@@ -81,7 +85,19 @@ body {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: -4;
+		z-index: -5;
+		img {
+			object-fit: fill;
+		}
+	}
+	&__bg2 {
+		padding-top: 88.4rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -5;
 		img {
 			object-fit: fill;
 		}
@@ -89,18 +105,18 @@ body {
 	.pasan {
 		position: absolute;
 		top: -15rem;
-		left: 28rem;
+		left: 22rem;
 		width: 113rem;
 		height: 91rem;
-		z-index: -1;
+		z-index: -2;
 		@include img(contain);
-		transform: scale(0.8);
+		transform: scale(1.4);
 	}
 	.heart {
 		position: absolute;
-		top: 11rem;
-		left: 48rem;
-		z-index: -2;
+		top: 2rem;
+		left: 45rem;
+		z-index: -3;
 		@include img(contain);
 		transform: scale(0.8);
 
@@ -116,6 +132,144 @@ body {
 			height: 5.3rem;
 		}
 	}
+
+	&__v1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60rem;
+		height: 38.5rem;
+		z-index: -1;
+	}
+	&__v2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 59.6rem;
+		height: 24.4rem;
+		z-index: -1;
+	}
+	&__v3 {
+		position: absolute;
+		top: 48.2rem;
+		left: 0;
+		width: 81.8rem;
+		height: 68.5rem;
+		z-index: -1;
+	}
+	&__v4 {
+		position: absolute;
+		top: 48.4rem;
+		right: 0;
+		width: 54.7rem;
+		height: 51rem;
+		z-index: -1;
+	}
+	&__v5 {
+		position: absolute;
+		bottom: 0rem;
+		left: 0;
+		width: 56.5rem;
+		height: 68rem;
+		z-index: 1;
+	}
+	&__v6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 39.8rem;
+		height: 83.2rem;
+		z-index: 1;
+	}
+	&__ten {
+		position: absolute;
+		top: -8px;
+		left: 0;
+		width: 100%;
+		height: 127.1rem;
+		opacity: 0.52;
+		z-index: 3;
+
+		@media (max-width: 1919px) {display: none;}
+	}
+	&__o1 {
+		position: absolute;
+		top: 76.7rem;
+		left: 0;
+		width: 104.7rem;
+		height: 80.5rem;
+	}
+	&__o2 {
+		position: absolute;
+		top: 76.7rem;
+		left: 13.4rem;
+		width: 166.3rem;
+		height: 80.5rem;
+	}
+	&__o3 {
+		position: absolute;
+		top: 73rem;
+		right: 0;
+		width: 111.8rem;
+		height: 81rem;
+	}
+	&__ro1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 110rem;
+		z-index: -1;
+	}
+	&__ro2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 64rem;
+		z-index: -1;
+	}
+	&__ro3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 76.5rem;
+		height: 19.4rem;
+		z-index: -1;
+	}
+	&__ro4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 54.4rem;
+		height: 40rem;
+		z-index: -1;
+	}
+	&__clipboard {
+		
+		font-size: 2rem;
+		position: absolute;
+		z-index: 20;
+		bottom: 0;
+		left: 28rem;
+		display: none;
+		border-radius: 2rem;
+		border: 4px solid #563431b2;
+		background-color: #dfaca5b6;
+		font-family: 'Golos Text';
+		letter-spacing: 0.2rem;
+		width: 100%;
+		padding: 1rem;
+		color: #523431;
+		pointer-events: none;
+	}
+	&__clipboard.active {
+		display: block;
+	}
+}
+
+.ignore {
+	pointer-events: none;
 }
 
 .container {
@@ -163,6 +317,8 @@ body {
 }
 
 .start {
+	margin-bottom: 52rem;
+
 	.container {
 		max-width: 104rem;
 	}
@@ -219,3 +375,83 @@ body {
 		}
 	}
 }
+
+.shop {
+	position: relative;
+	z-index: 2;
+	&__title {
+		font-family: 'Golos Text';
+		font-size: 6rem;
+		font-weight: 600;
+		color: #563431;
+		text-align: center;
+		margin-bottom: 9rem;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__columm {
+		flex: 0 1 25%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	&__item {
+		flex: 0 1 28rem;
+		//width: 100%;
+		transition: 0.3s;
+		background: #6a4b48;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__img {
+		
+		height: 15rem;
+	}
+
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2.5rem;
+		background: white;
+		transform: scaleY(1.01);
+	}
+
+	&__left {}
+
+	&__name {
+		font-family: 'Golos Text';
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+		color: #563430;
+		margin-bottom: 0.5rem;
+	}
+
+	&__time {
+		font-family: 'Golos Text';
+		font-size: 1.56rem;
+		font-weight: 600;
+		color: #c5c5c5;
+	}
+
+	&__price {
+		font-family: 'Golos Text';
+		font-size: 2.44rem;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+		color: #563430;
+	}
+}
+
+.container {}
