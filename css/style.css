@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -147,10 +148,199 @@ html, body {
     font-size: 4.4px;
   }
 }
+@font-face {
+  font-family: "Golos Text";
+  src: url("../fonts/Golos-Text_Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos Text";
+  src: url("../fonts/Golos-Text_DemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos Text";
+  src: url("../fonts/Golos-Text_Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+.start__button, .header__a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
-  overflow: hidden;
+  font-family: Montserrat;
+  position: relative;
+  min-height: 100vh;
+}
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrapper__logo1 {
+  position: absolute;
+  top: 4.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 178.9rem;
+  height: 38.3rem;
+  z-index: -3;
+}
+.wrapper__logo2 {
+  position: absolute;
+  top: 46.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 173.2rem;
+  height: 49.8rem;
+  z-index: -3;
+}
+.wrapper__bg1 {
+  padding-top: 22rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+}
+.wrapper__bg1 img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.wrapper .pasan {
+  position: absolute;
+  top: -15rem;
+  left: 28rem;
+  width: 113rem;
+  height: 91rem;
+  z-index: -1;
+  transform: scale(0.8);
+}
+.wrapper .pasan img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrapper .heart {
+  position: absolute;
+  top: 11rem;
+  left: 48rem;
+  z-index: -2;
+  transform: scale(0.8);
+  width: 20.2rem;
+  height: 22.2rem;
+  border: 0.4rem solid #d0baba;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5.5rem;
+}
+.wrapper .heart img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrapper .heart img {
+  width: 5.3rem;
+  height: 5.3rem;
 }
 
 .container {
   margin: 0 auto;
+  max-width: 126rem;
+  position: relative;
+}
+
+.header {
+  padding-top: 5.7rem;
+  margin-bottom: 13.7rem;
+}
+.header__ul {
+  display: flex;
+  justify-content: center;
+}
+.header__li {
+  margin-right: 12rem;
+  display: flex;
+}
+.header__li:last-child {
+  margin-right: 0;
+}
+.header__a {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #ab8e8a;
+  height: 4rem;
+  width: 12rem;
+}
+.header__a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #8a5f59;
+}
+.header .inhere {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #8a5f59;
+}
+
+.start .container {
+  max-width: 104rem;
+}
+.start__title {
+  font-family: "Golos Text";
+  font-size: 5.4rem;
+  line-height: 5.7rem;
+  font-weight: 700;
+  color: #7a4a44;
+  max-width: 38rem;
+  margin-bottom: 3rem;
+}
+.start__subtitle {
+  font-family: "Golos Text";
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: #856868;
+  max-width: 38rem;
+  margin-bottom: 3rem;
+}
+.start__button {
+  width: 25rem;
+  height: 6rem;
+  background-color: #dfaca5;
+  box-shadow: 0.8rem 1.4rem 5.5rem 0.8rem rgba(166, 141, 142, 0.4);
+  position: relative;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 0.5rem 0px #a77974;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.start__button span {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #523431;
+}
+.start__button:hover {
+  transform: translateY(0.2rem);
+  box-shadow: 0 0.3rem 0px #a77974;
+}
+.start__button:active {
+  transform: translateY(0.5rem);
+  box-shadow: 0 0rem 0px #a77974;
 }/*# sourceMappingURL=style.css.map */
