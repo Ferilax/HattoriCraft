@@ -22,13 +22,6 @@
 }
 
 //ШАБЛОНЫ
-%tplButton {
-	&:hover {
-	}
-	&:active {
-	}
-}
-
 %displayFlex {
 	display: flex;
 	justify-content: center;
@@ -42,13 +35,6 @@
 		height: 100%;
 		object-fit: $objFit;
 	}
-}
-
-
-//ПЕРЕМЕННЫЕ
-
-body {
-	//background: #111;
 }
 
 .wrapper {
@@ -66,7 +52,6 @@ body {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 178.9rem;
-		height: 38.3rem;
 		z-index: -4;
 	}
 	&__logo2 {
@@ -75,7 +60,6 @@ body {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 173.2rem;
-		height: 49.8rem;
 		z-index: -4;
 	}
 	&__bg1 {
@@ -281,8 +265,6 @@ body {
 .header {
 	padding-top: 5.7rem;
 	margin-bottom: 13.7rem;
-	&__nav {
-	}
 
 	&__ul {
 		display: flex;
@@ -349,7 +331,6 @@ body {
 		background-color: #dfaca5;
 		box-shadow: 0.8rem 1.4rem 5.5rem 0.8rem rgba(166, 141, 142, 0.4);
 		position: relative;
-		//box-shadow: inset 0px 0px 1px 0px #b7e4ff;
 		border-radius: 1rem;
 		position: relative;
 		@extend %displayFlex;
@@ -379,6 +360,7 @@ body {
 .shop {
 	position: relative;
 	z-index: 2;
+
 	&__title {
 		font-family: 'Golos Text';
 		font-size: 6rem;
@@ -399,6 +381,7 @@ body {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 4rem;
+		
 	}
 
 	&__item {
@@ -413,7 +396,6 @@ body {
 	}
 
 	&__img {
-		
 		height: 15rem;
 	}
 
@@ -426,8 +408,6 @@ body {
 		background: white;
 		transform: scaleY(1.01);
 	}
-
-	&__left {}
 
 	&__name {
 		font-family: 'Golos Text';
@@ -454,4 +434,61 @@ body {
 	}
 }
 
-.container {}
+@media (max-width: 48em) {
+	.wrapper__v1 {
+		transform: scale(0.5) translate(-60%, -50%);
+	}
+	.wrapper__v2 {
+		transform: scale(0.5) translate(50%, -50%);
+	}
+	.wrapper__v3 {
+		transform: scale(0.5) translate(-50%, 0);
+	}
+	.wrapper__v4 {
+		transform: scale(0.5) translate(50%, 0);
+	}
+	.wrapper__v5 {
+		transform: scale(0.5) translate(-50%, 50%);
+	}
+	.wrapper__v6 {
+		transform: scale(0.5) translate(50%, 50%);
+	}
+
+	.header {
+		&__li {
+			margin-right: 5rem;
+		}
+	}
+
+	.wrapper__bg1,
+	.wrapper__ro1,
+	.wrapper__ro2,
+	.wrapper__ro3,
+	.wrapper__ro4 {
+		display: none;
+	}
+
+
+	.wrapper__logo1 {width: 70rem;}
+	.wrapper__logo2 {
+		width: 55rem;
+		top: 26rem;
+	}
+
+	.start {
+		.container {padding: 0 3rem;}
+		.pasan {
+			left: -4rem;
+			transform: scale(0.8);
+		}
+		.heart {
+			top: 10rem;
+			left: 30rem;
+			transform: scale(0.5);
+		}
+	}
+
+	.shop {
+		&__columm {flex: 0 1 50%;}
+	}
+}
