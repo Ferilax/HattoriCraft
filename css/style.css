@@ -231,7 +231,7 @@ html, body {
 .wrapper .pasan {
   position: absolute;
   top: -15rem;
-  left: 22rem;
+  left: 14rem;
   width: 113rem;
   height: 91rem;
   z-index: -2;
@@ -245,10 +245,10 @@ html, body {
 }
 .wrapper .heart {
   position: absolute;
-  top: 2rem;
-  left: 45rem;
+  top: 6rem;
+  left: 43rem;
   z-index: -3;
-  transform: scale(0.8);
+  transform: scale(0.8) rotate(-15deg);
   width: 20.2rem;
   height: 22.2rem;
   border: 0.4rem solid #d0baba;
@@ -256,6 +256,7 @@ html, body {
   display: flex;
   justify-content: center;
   padding-top: 5.5rem;
+  display: none;
 }
 .wrapper .heart img {
   width: 100%;
@@ -390,7 +391,7 @@ html, body {
   left: 28rem;
   display: none;
   border-radius: 2rem;
-  border: 4px solid rgba(86, 52, 49, 0.6980392157);
+  border: 0.2rem solid rgba(86, 52, 49, 0.6980392157);
   background-color: rgba(223, 172, 165, 0.7137254902);
   font-family: "Golos Text";
   letter-spacing: 0.2rem;
@@ -518,6 +519,20 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.shop__row1 {
+  margin-bottom: 10rem;
+}
+.shop__row2 {
+  max-width: 100rem;
+  margin: auto;
+}
+.shop__row2 > div {
+  flex: 0 1 28rem;
+  margin: 0 1.75rem 4rem;
+}
+.shop__row2 .shop__body {
+  padding: 1rem 2.5rem;
+}
 .shop__columm {
   flex: 0 1 25%;
   display: flex;
@@ -533,7 +548,10 @@ html, body {
   transform: scale(1.05);
 }
 .shop__img {
-  height: 15rem;
+  height: 16.8rem;
+}
+.shop__img img {
+  pointer-events: none;
 }
 .shop__body {
   position: relative;
@@ -551,6 +569,7 @@ html, body {
   letter-spacing: 0.01em;
   color: #563430;
   margin-bottom: 0.5rem;
+  max-width: 15rem;
 }
 .shop__time {
   font-family: "Golos Text";
