@@ -383,26 +383,6 @@ html, body {
   height: 40rem;
   z-index: -1;
 }
-.wrapper__clipboard {
-  font-size: 2rem;
-  position: absolute;
-  z-index: 20;
-  bottom: 0;
-  left: 28rem;
-  display: none;
-  border-radius: 2rem;
-  border: 0.2rem solid rgba(86, 52, 49, 0.6980392157);
-  background-color: rgba(223, 172, 165, 0.7137254902);
-  font-family: "Golos Text";
-  letter-spacing: 0.2rem;
-  width: 100%;
-  padding: 1rem;
-  color: #523431;
-  pointer-events: none;
-}
-.wrapper__clipboard.active {
-  display: block;
-}
 
 .ignore {
   pointer-events: none;

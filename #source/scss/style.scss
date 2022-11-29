@@ -230,27 +230,6 @@
 		height: 40rem;
 		z-index: -1;
 	}
-	&__clipboard {
-		
-		font-size: 2rem;
-		position: absolute;
-		z-index: 20;
-		bottom: 0;
-		left: 28rem;
-		display: none;
-		border-radius: 2rem;
-		border: 0.2rem solid #563431b2;
-		background-color: #dfaca5b6;
-		font-family: 'Golos Text';
-		letter-spacing: 0.2rem;
-		width: 100%;
-		padding: 1rem;
-		color: #523431;
-		pointer-events: none;
-	}
-	&__clipboard.active {
-		display: block;
-	}
 }
 
 .ignore {
